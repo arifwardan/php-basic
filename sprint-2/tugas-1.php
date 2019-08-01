@@ -59,14 +59,16 @@ print_r($sisa);
 
 echo PHP_EOL;
 echo "apakah akan anda kembalikan ? ".PHP_EOL.PHP_EOL;
-echo "kembalikan press : 1 !".PHP_EOL;
-echo "Jika tidak : harus beli!!.".PHP_EOL;
-$usee =(int) fgets(STDIN);
+echo "kembalikan press : y !".PHP_EOL;
+echo "masih mau pinjam press : n !".PHP_EOL.PHP_EOL;
+$usee = fgets(STDIN);
 
-if ($usee === 1){
+if (trim($usee) === "y"){                                               //function "trim" untuk menghapus semua spasi
     print_r($myLibrary->bookNotUsed($notUse));
-    echo "terima kasih pembaca karena telah bertanggung jawab.".PHP_EOL;
-}else{
+    echo "TERIMA KASIH TELAH MENGGUNAKAN  PRODUCT KAMI.".PHP_EOL;
+}elseif (trim($usee) === "n") {
     print_r ($sisa);
-    echo "Tidak mau mengembalikan harus beli !" . PHP_EOL;
+    echo "TIDAK ADA BUKU YANG ANDA KEMBALIKAN" . PHP_EOL;
+}else{
+    echo "YANG ANDA INPUT GAK JELAS!!!";
 }
