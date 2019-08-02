@@ -16,17 +16,6 @@ class Rectangle {
     }
 }
 
-// try {
-//     if (trim($nama) != "arif wardan"){
-//         throw new BukanNamaAnda("ini bukan nama saya");
-//     }else{
-//         echo "nama anda $nama".PHP_EOL;
-//     }
-// } catch (BukanNamaAnda $errorCuy) {
-//     echo $errorCuy->getMessage();
-// }
-
-// class BukanNamaAnda extends Exception{}
 
     echo "Masukkan Nilai Lebar  : ".PHP_EOL;
 $nilaiLebar = (int) fgets(STDIN);
