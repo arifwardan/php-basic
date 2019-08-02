@@ -16,7 +16,35 @@ class Rectangle {
     }
 }
 
-$l = 5;
-$t = 4;
-$obj= new Rectangle($l, $t);
-echo "luas Rectangle : ". Rectangle::hitungLuas()."cm".PHP_EOL;
+// try {
+//     if (trim($nama) != "arif wardan"){
+//         throw new BukanNamaAnda("ini bukan nama saya");
+//     }else{
+//         echo "nama anda $nama".PHP_EOL;
+//     }
+// } catch (BukanNamaAnda $errorCuy) {
+//     echo $errorCuy->getMessage();
+// }
+
+// class BukanNamaAnda extends Exception{}
+
+    echo "Masukkan Nilai Lebar  : ".PHP_EOL;
+$nilaiLebar = (int) fgets(STDIN);
+    echo "Masukkan NIlai Tinggi : ".PHP_EOL;
+$nilaiTinggi = (int) fgets(STDIN);
+
+try {
+    if($nilaiLebar < 0 || $nilaiTinggi < 0){
+        throw new InputDataMinus("504 Kesalahan !!! data yang anda input kurang dari 0.".PHP_EOL);
+    }else{
+        $obj= new Rectangle($nilaiLebar, $nilaiTinggi);
+        echo "luas Rectangle : ". Rectangle::hitungLuas()."cm".PHP_EOL;
+    }
+} catch (InputDataMinus $minus) {
+    echo $minus->getmessage();
+}
+
+class InputDataMinus extends Exception{}
+
+
+
