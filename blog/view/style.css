@@ -1,0 +1,87 @@
+*{
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("view/gambar/admin.jpg");
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 40px auto;
+    width: 80%;
+}
+    /* Create three unequal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 10px;
+}
+
+    /* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    background-color: #fff4;
+    /* background-color: rgb(89, 41, 90); */
+    color: black;
+    width: 98%;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+        width: 100%;
+    }
+}
+input[type=text], [type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+label {
+color: 	#00CED1;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    width: 49%;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid blue;
+    border-radius: 35px 5px;
+    padding: 10px;
+    text-align: center
+}
