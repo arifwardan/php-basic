@@ -12,12 +12,12 @@ require "view/header.php";
 <body>
     <div class="container">
 
-    <h1>Auto Load</h1>
+    <h1></h1>
         <div class="row" style="margin-top:5%; margin-bottom:5%">
             <div class="Trapezoidal btn btn-outline-primary">
                 <form action="" method="POST" >
                     <h3>Trapezoidal</h3>
-                    <div class="card" style="width: 15rem;">
+                    <div class="card" style="width: 15rem; padding:5%">
                         <input type="text" name="sisi1" placeholder="Sisi pertama">
                         <input type="text" name="sisi2" placeholder="Sisi kedua">
                         <input type="text" name="tinggi" placeholder="Tinggi">
@@ -45,7 +45,7 @@ require "view/header.php";
             <div class="Rectangle btn btn-outline-primary">
                 <form action="" method="POST">
                     <h3>Rectangle</h3>
-                    <div class="card" style="width: 15rem;">
+                    <div class="card" style="width: 15rem; padding:5%">
                         <input type="text" name="panjang" placeholder="Panjang">
                         <input type="text" name="lebar" placeholder="Lebar">
                         <input type="reset" value="Reset">
@@ -70,7 +70,7 @@ require "view/header.php";
             <div class="Triangle btn btn-outline-primary">
                 <form action="" method="POST">
                     <h3>Triangle</h3>
-                    <div class="card" style="width: 15rem;">
+                    <div class="card" style="width: 15rem; padding:5%">
                         <input type="text" name="alas" placeholder="Alas">
                         <input type="text" name="tinggi" placeholder="Tinggi">
                         <input type="reset" value="Reset">
@@ -95,7 +95,7 @@ require "view/header.php";
             <div class="Circle btn btn-outline-primary">
                 <form action="" method="POST">
                     <h3>Circle</h3>
-                    <div class="card " style="width: 15rem;">
+                    <div class="card " style="width: 15rem; padding:5%">
                         <input type="button" value="Circle">
                         <input type="text" name="jari" placeholder="Jari Jari">
                         <input type="reset" value="Reset">

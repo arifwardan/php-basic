@@ -1,5 +1,5 @@
 <head>
-    <title>Hitung Hitung</title>
+    <title>>_<</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
