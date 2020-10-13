@@ -7,7 +7,7 @@ class Library
         [   'book_name' => "Programmer Dari Gunung Kidul",
             'isbn'      => "001.3AE"
         ],
-        [   'book_name' => "Copy Paste Develover",
+        [   'book_name' => "Copy Paste Developer",
             'isbn'      => "002.57U"
         ],
         [   'book_name' => "Ruang Guru",

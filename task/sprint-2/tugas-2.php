@@ -26,7 +26,7 @@ try {
     if($nilaiLebar < 0 || $nilaiTinggi < 0){
         throw new InputDataMinus("504 Kesalahan !!! data yang anda input kurang dari 0.".PHP_EOL);
     }else{
-        $obj= new Rectangle($nilaiLebar, $nilaiTinggi);
+        new Rectangle($nilaiLebar, $nilaiTinggi);
         echo "luas Rectangle : ". Rectangle::hitungLuas()."cm".PHP_EOL;
     }
 } catch (InputDataMinus $minus) {
